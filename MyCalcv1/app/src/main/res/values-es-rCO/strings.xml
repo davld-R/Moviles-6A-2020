@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi Calculadora v1</string>
+    <string name="lbl_n1">Numero uno</string>
+    <string name="lbl_n2">Numero dos</string>
+    <string name="btn_add">Sumar</string>
+</resources>
