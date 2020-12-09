@@ -18,21 +18,23 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/lbl_red"
                 android:textSize="18sp"/>
 
             <SeekBar
-                android:id="@+id/seekBar"
-                android:layout_width="wrap_content"
+                android:id="@+id/sbrRed"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:progress="0"
+                android:max="255"/>
         </LinearLayout>
 
         <LinearLayout
@@ -43,17 +45,19 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/lbl_green"
                 android:textSize="18sp"/>
 
             <SeekBar
-                android:id="@+id/seekBar2"
-                android:layout_width="wrap_content"
+                android:id="@+id/sbrGreen"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:progress="0"
+                android:max="255"/>
         </LinearLayout>
 
         <LinearLayout
@@ -64,17 +68,19 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/lbl_blue"
                 android:textSize="18sp"/>
 
             <SeekBar
-                android:id="@+id/seekBar3"
-                android:layout_width="wrap_content"
+                android:id="@+id/sbrBlue"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:progress="0"
+                android:max="255"/>
         </LinearLayout>
 
         <LinearLayout
@@ -85,31 +91,32 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/lbl_alpha"
                 android:textSize="18sp"/>
 
             <SeekBar
-                android:id="@+id/seekBar4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/sbrAlpha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/paisaje"
-                tools:srcCompat="@drawable/paisaje" />
+                android:layout_weight="1"
+                android:progress="0"
+                android:max="255"/>
         </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/paisaje">
+
+            <View
+                android:id="@+id/vieColors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#80808080"/>
+        </FrameLayout>
 
     </LinearLayout>
 

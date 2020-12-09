@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.david.palletecolors">
+    package="com.david.mypets">
 
     <application
         android:allowBackup="true"
@@ -9,21 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HelpActivity" android:label="@string/title_Help">
-
-        </activity>
-        <activity android:name=".AboutOfActivity" android:label="@string/title_AboutOf">
-
-        </activity>
-        <activity
-            android:name=".SplashScreenActivity"
-            android:theme="@style/AppThemeSplash"></activity>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".RegisterUserActivity"></activity>
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".SplashScreenActivity" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mis mascotas</string>
+    <string name="lbl_username">Usuario</string>
+    <string name="lbl_password">Constraseña</string>
+    <string name="btn_signin">INGRESAR</string>
+</resources>
