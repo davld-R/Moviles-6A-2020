@@ -154,7 +154,6 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
                 sbr_alpha.setProgress(255);
                 break;
         }
-        
         return super.onOptionsItemSelected(item);
     }
 
