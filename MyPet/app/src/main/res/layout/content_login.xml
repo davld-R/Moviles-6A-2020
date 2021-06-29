@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@android:drawable/ic_menu_revert"
+            android:onClick="exit" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_menu_help"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="45dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="PET SITTING"
+            android:textColor="#0869B6"
+            android:textSize="42dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Inicio Sesión"
+            android:textColor="#0869B6"
+            android:textSize="36dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="137dp"
+            android:layout_height="195dp"
+            app:srcCompat="@drawable/can" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario:     "
+                android:textColor="#CF2C2C"
+                android:textSize="23dp" />
+
+            <EditText
+                android:id="@+id/et_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Digite Nombre" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña:    "
+                android:textColor="#CF2C2C"
+                android:textSize="23dp" />
+
+            <EditText
+                android:id="@+id/et_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Numeros"
+                android:inputType="numberPassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:background="#FBD76A"
+                android:text="Register"
+                android:onClick="next"/>
+
+            <Button
+                android:layout_width="123dp"
+                android:layout_height="73dp"
+                android:background="@android:drawable/ic_menu_send"
+                android:onClick="login" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="start"
+                android:text=">"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
